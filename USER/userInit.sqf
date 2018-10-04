@@ -82,11 +82,46 @@
 				"H_Beret_Colonel",
 				"H_Watchcap_camo",
 				"H_Watchcap_sgg",
-				"H_Hat_checker"
+				"H_Hat_checker",
+				"H_Watchcap_blk",
+				"H_ShemagOpen_tan",
+				"H_Bandanna_khk_hs",
+				"H_MilCap_oucamo",
+				"rhsgref_ssh68",
+				"rhsgref_ssh68",
+				"rhsgref_ssh68",
+				"rhsgref_ssh68",
+				"rhsgref_ssh68",
+				"rhsgref_ssh68"
 			];
         };
         _value
     },
     "headgear",
+    true
+] call GRAD_Loadout_fnc_addReviver;
+
+
+
+// backpack
+
+// randomize reichsbuerger headgear
+[
+    {
+        _value = param [0];
+        if (_value == "") then {
+            _value = selectRandom [
+            	"rhsusf_assault_eagleaiii_coy",
+				"",
+				"",
+				"",
+				"",
+				"",
+				""
+			];
+        };
+        _value
+    },
+    "backpack",
     true
 ] call GRAD_Loadout_fnc_addReviver;
