@@ -19,7 +19,7 @@
 
 
 loadoutFactionBlu = "bundeswehrCustom";
-loadoutFactionOpf = "";
+loadoutFactionOpf = "reichsBuerger";
 loadoutFactionInd = "";
 
 
