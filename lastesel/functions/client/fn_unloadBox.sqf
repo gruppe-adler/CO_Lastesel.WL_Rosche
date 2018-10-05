@@ -2,7 +2,7 @@ params ["_vehicle"];
 
 private _count = _vehicle getVariable ["lastesel_cargoCount", 0];
 
-private _pos = (position _vehicle) findEmptyPosition [2,5,"Land_PaperBox_closed_F"];
+private _pos = (position _vehicle) findEmptyPosition [2,8,"Land_PaperBox_closed_F"];
 
 if (count _pos < 1) exitWith { hint "no empty place for the box"; };
 
