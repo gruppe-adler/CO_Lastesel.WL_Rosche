@@ -26,7 +26,7 @@ class reichsBuerger: RuFlora {
     class AllUnits: AllUnits {
 
         uniform = "rds_uniform_Worker1";
-        vest = "";
+        vest = "rhs_vest_commander";
         backpack = "";
         headgear = "rds_Villager_cap1";
     };

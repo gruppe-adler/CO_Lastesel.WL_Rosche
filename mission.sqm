@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=494;
+		nextID=495;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=28;
+		nextID=35;
 	};
 	class Camera
 	{
-		pos[]={9146.7168,29.353405,9850.7646};
-		dir[]={-0.2303054,-0.64331836,0.73014826};
-		up[]={-0.19352175,0.76559299,0.61352986};
-		aside[]={0.95368969,7.7125151e-008,0.30081564};
+		pos[]={14866.332,51.824329,12277.053};
+		dir[]={-0.5236358,-0.58245844,0.62177914};
+		up[]={-0.37520468,0.8128491,0.44552782};
+		aside[]={0.76491255,-7.6834112e-009,0.6441775};
 	};
 };
 binarizationWanted=0;
@@ -52,13 +52,14 @@ addons[]=
 	"A3_Structures_F_Training",
 	"rhs_c_troops",
 	"CUP_Misc_e_Config",
-	"A3_Structures_F_Civ_Dead"
+	"A3_Structures_F_Civ_Dead",
+	"CUP_Editor_Signs_Config"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=23;
+		items=24;
 		class Item0
 		{
 			className="gm_demo_nato_mb_u1300l";
@@ -207,6 +208,11 @@ class AddonsMetaData
 			className="CUP_Misc_e_Config";
 			name="CUP_Misc_e_Config";
 		};
+		class Item23
+		{
+			className="CUP_Editor_Signs_Config";
+			name="CUP_Editor_Signs_Config";
+		};
 	};
 };
 randomSeed=13660744;
@@ -241,7 +247,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=42;
+		items=43;
 		class Item0
 		{
 			dataType="Object";
@@ -400,7 +406,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14930.745,33.262707,12300.01};
-				angles[]={0,4.8784094,-0};
+				angles[]={0,4.8784094,0};
 			};
 			side="Empty";
 			flags=4;
@@ -728,7 +734,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14896.426,31.654634,12301.008};
+						position[]={14873.533,31.670412,12303.343};
 						angles[]={6.2826972,4.8784094,6.2804017};
 					};
 					side="West";
@@ -4245,6 +4251,7 @@ class Mission
 			};
 			id=476;
 			type="CargoNet_01_box_F";
+			atlOffset=-1.9073486e-006;
 		};
 		class Item30
 		{
@@ -4268,7 +4275,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14877.978,32.295418,12305.969};
-				angles[]={-0,3.4313543,6.2809749};
+				angles[]={0,3.4313543,6.2809749};
 			};
 			side="Empty";
 			flags=4;
@@ -4277,6 +4284,7 @@ class Mission
 			};
 			id=478;
 			type="CargoNet_01_box_F";
+			atlOffset=1.9073486e-006;
 		};
 		class Item32
 		{
@@ -4284,7 +4292,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={14875.122,32.302025,12306.87};
-				angles[]={-0,3.4313543,6.2809749};
+				angles[]={0,3.4313543,6.2809749};
 			};
 			side="Empty";
 			flags=4;
@@ -4300,7 +4308,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={9149.2979,22.064873,9865.9346};
-				angles[]={-0,3.8138587,0};
+				angles[]={0,3.8138587,0};
 			};
 			side="Empty";
 			flags=4;
@@ -4310,6 +4318,7 @@ class Mission
 			};
 			id=480;
 			type="LOP_AFR_OPF_T34";
+			atlOffset=8.7738037e-005;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -4566,6 +4575,7 @@ class Mission
 			};
 			id=492;
 			type="GraveCrossHelmet_EP1";
+			atlOffset=1.9073486e-006;
 		};
 		class Item41
 		{
@@ -4582,6 +4592,21 @@ class Mission
 			};
 			id=493;
 			type="Land_Grave_obelisk_F";
+		};
+		class Item42
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15020.94,32.518677,12313.206};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=494;
+			type="CUP_sign_hospital";
 		};
 	};
 	class Connections

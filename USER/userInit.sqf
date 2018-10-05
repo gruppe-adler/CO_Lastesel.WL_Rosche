@@ -64,7 +64,7 @@
 [
     {
         _value = param [0];
-        if (_value == "rhs_6b27m_digi") then {
+        if (_value == "rds_Villager_cap1") then {
             _value = selectRandom [
             	"rds_Villager_cap1",
 				"rds_Villager_cap2",
@@ -87,12 +87,22 @@
 				"H_ShemagOpen_tan",
 				"H_Bandanna_khk_hs",
 				"H_MilCap_oucamo",
-				"rhsgref_ssh68",
-				"rhsgref_ssh68",
-				"rhsgref_ssh68",
-				"rhsgref_ssh68",
-				"rhsgref_ssh68",
-				"rhsgref_ssh68"
+				"rhs_ssh68",
+				"rhs_ssh68",
+				"rhs_ssh68",
+				"rhs_ssh68",
+				"rhs_ssh68",
+				"rhs_ssh68",
+                "rhssaf_helmet_m59_85_nocamo",
+                "rhssaf_helmet_m59_85_nocamo",
+                "rhssaf_helmet_m59_85_nocamo",
+                "rhssaf_helmet_m59_85_nocamo",
+                "rhssaf_helmet_m97_black_nocamo",
+                "rhssaf_helmet_m97_black_nocamo",
+                "rhssaf_helmet_m97_black_nocamo",
+                "rhssaf_helmet_m97_black_nocamo",
+                "rhssaf_bandana_md2camo",
+                "rhssaf_bandana_oakleaf"
 			];
         };
         _value
@@ -112,9 +122,9 @@
         if (_value == "") then {
             _value = selectRandom [
             	"rhsusf_assault_eagleaiii_coy",
-				"",
-				"",
-				"",
+				"B_Messenger_Olive_F",
+				"B_Messenger_Gray_F",
+				"B_Messenger_Black_F",
 				"",
 				"",
 				""
@@ -123,5 +133,31 @@
         _value
     },
     "backpack",
+    true
+] call GRAD_Loadout_fnc_addReviver;
+
+
+
+// vest
+
+// randomize reichsbuerger headgear
+[
+    {
+        _value = param [0];
+        if (_value == "rhs_vest_commander") then {
+            _value = selectRandom [
+                "rhs_vest_commander",
+                "rhs_vest_pistol_holster",
+                "rhs_6b5_khaki",
+                "rhs_6b5_sniper_khaki",
+                "LOP_6sh46",
+                "B_LegStrapBag_black_F",
+                "B_LegStrapBag_coyote_F",
+                "B_LegStrapBag_olive_F"
+            ];
+        };
+        _value
+    },
+    "vest",
     true
 ] call GRAD_Loadout_fnc_addReviver;
