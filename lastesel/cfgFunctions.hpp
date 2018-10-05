@@ -11,6 +11,7 @@ class lastesel {
     class server {
             file = lastesel\functions\server;
 
+            class lockUnimogCargo;
             class skinUH1;
     };
 };

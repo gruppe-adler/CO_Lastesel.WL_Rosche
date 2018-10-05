@@ -5,6 +5,8 @@
 
 
 
+
+
 // randomize reichsbuerger uniforms
 [
     {
@@ -123,7 +125,6 @@
             _value = selectRandom [
             	"rhsusf_assault_eagleaiii_coy",
 				"B_Messenger_Olive_F",
-				"B_Messenger_Gray_F",
 				"B_Messenger_Black_F",
 				"",
 				"",
