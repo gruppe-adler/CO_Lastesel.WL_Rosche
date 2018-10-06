@@ -4,6 +4,118 @@
 */
 
 
+// WUTBUERGER
+
+// randomize wutbuerger uniforms
+[
+    {
+        _value = param [0];
+        if (_value == "rds_uniform_Worker2") then {
+            _value = selectRandom [
+            	"rds_uniform_Worker1",
+				"rds_uniform_Worker2",
+				"rds_uniform_Worker3",
+				"rds_uniform_Worker4",
+				"rds_uniform_Woodlander1",
+				"rds_uniform_Woodlander2",
+				"rds_uniform_Woodlander3",
+				"rds_uniform_Woodlander4",
+				"rds_uniform_Villager1",
+				"rds_uniform_Villager2",
+				"rds_uniform_Villager3",
+				"rds_uniform_Villager4",
+				"rds_uniform_Profiteer1",
+				"rds_uniform_Profiteer2",
+				"rds_uniform_Profiteer3",
+				"rds_uniform_Profiteer4",
+				"rds_uniform_citizen1",
+				"rds_uniform_citizen2",
+				"rds_uniform_citizen3",
+				"rds_uniform_citizen4",
+				"rds_uniform_Rocker1",
+				"rds_uniform_Rocker2",
+				"rds_uniform_Rocker3"
+			];
+        };
+        _value
+    },
+    "uniform",
+    true
+] call GRAD_Loadout_fnc_addReviver;
+
+
+
+// randomize wutbuerger headgear
+[
+    {
+        _value = param [0];
+        if (_value == "rds_Villager_cap2") then {
+            _value = selectRandom [
+            	"rds_Villager_cap1",
+				"rds_Villager_cap2",
+				"rds_Villager_cap3",
+				"rds_Villager_cap4",
+				"rds_Villager_cap2",
+				"G_Bandanna_oli",
+				"H_Booniehat_dirty",
+				"H_Booniehat_mcamo",
+				"H_Cap_red",
+				"H_Cap_tan",
+				"H_Bandanna_cbr",
+				"H_Watchcap_camo",
+				"H_Watchcap_sgg",
+				"H_Hat_checker",
+				"H_Watchcap_blk",
+				"H_Bandanna_khk_hs",
+				"H_MilCap_oucamo",
+                "rhssaf_bandana_md2camo",
+                "rhssaf_bandana_oakleaf",
+                "H_MilCap_gry",
+                "H_MilCap_blue"
+			];
+        };
+        _value
+    },
+    "headgear",
+    true
+] call GRAD_Loadout_fnc_addReviver;
+
+
+// randomize wutbuerger vest
+[
+    {
+        _value = param [0];
+        if (_value == "") then {
+            _value = selectRandom [
+                "rhs_vest_commander",
+                "rhs_vest_pistol_holster",
+                "rhs_6b5_khaki",
+                "rhs_6b5_sniper_khaki",
+                "LOP_6sh46",
+                "B_LegStrapBag_black_F",
+                "B_LegStrapBag_coyote_F",
+                "B_LegStrapBag_olive_F"
+            ];
+        };
+        _value
+    },
+    "vest",
+    true
+] call GRAD_Loadout_fnc_addReviver;
+
+
+
+
+
+
+
+
+
+
+// REICHSBUERGER
+
+
+
 
 
 
