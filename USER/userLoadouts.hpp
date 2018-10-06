@@ -6,3 +6,4 @@
 // #include "..\node_modules\grad-factions\factions\BwFleck.hpp"
 #include "bundeswehrCustom.hpp"
 #include "reichsBuerger.hpp"
+#include "wutBuerger.hpp"

@@ -21,6 +21,7 @@
 loadoutFactionBlu = "bundeswehrCustom";
 loadoutFactionOpf = "reichsBuerger";
 loadoutFactionInd = "wutBuerger";
+loadoutFactionCiv = "wutBuerger";
 
 
 //#define NIGHTVISION
