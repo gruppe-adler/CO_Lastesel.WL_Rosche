@@ -15,4 +15,4 @@ params ["_group", "_waypointID"];
     _x enableFatigue false;
 } forEach units _group;
 
-[_group, _waypointID] setWaypointStatements ["true", "[group this] call GRAD_missionControl_fnc_disableChargeMode;"];
+[_group, _waypointID] setWaypointStatements ["true", "[group this] call GRAD_zeus_fnc_disableChargeMode;"];

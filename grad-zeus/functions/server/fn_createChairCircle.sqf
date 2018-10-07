@@ -6,7 +6,7 @@
 params ["_type", "_pos", "_count"];
 
 // params ["_origin", "_count", "_distance"];
-private _positions = [_pos, _count, _count/5] call GRAD_missionControl_fnc_getPosInCircle;
+private _positions = [_pos, _count, _count/5] call GRAD_zeus_fnc_getPosInCircle;
 private _chairs = [];
 
 {

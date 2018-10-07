@@ -6,6 +6,8 @@
 
 // WUTBUERGER
 
+
+
 // randomize wutbuerger uniforms
 [
     {
@@ -149,7 +151,6 @@
 				"rds_uniform_Rocker2",
 				"rds_uniform_Rocker3",
 				"rds_uniform_Rocker4",
-
 				"rhsgref_uniform_alpenflage",
 			    "rhsgref_uniform_flecktarn",
 			    "rhsgref_uniform_para_ttsko_mountain",
@@ -254,6 +255,8 @@
 // vest
 
 // randomize reichsbuerger headgear
+
+
 [
     {
         _value = param [0];
@@ -274,3 +277,6 @@
     "vest",
     true
 ] call GRAD_Loadout_fnc_addReviver;
+
+
+[] call GRAD_zeus_fnc_addModules;

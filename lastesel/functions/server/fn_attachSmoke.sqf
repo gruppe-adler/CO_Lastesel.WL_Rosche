@@ -1,9 +1,9 @@
 params ["_vehicle", "_color"];
 
-private _classname = "";
+private _classname = "rhs_mag_rdg2_black";
 
 switch (_color) do { 
-	case "black" : {  _classname = "rhs_mag_rdg2_black"; };
+	case "black" : {  _classname = "rhs_ammo_rdg2_black"; };
 	case "red" : {  _classname = "SmokeShellRed"; };
 	case "yellow" : {   _classname = "SmokeShellYellow"; };
 	default {  /*...code...*/ };

@@ -157,7 +157,7 @@ if (
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-    [_objectUnderCursor, "black"] call GRAD_lastesel_fnc_attachSmoke;
+    [_objectUnderCursor, "black"] call lastesel_fnc_attachSmoke;
 
   }] call Ares_fnc_RegisterCustomModule;
 
@@ -166,7 +166,7 @@ if (
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-    [_objectUnderCursor, "red"] call GRAD_lastesel_fnc_attachSmoke;
+    [_objectUnderCursor, "red"] call lastesel_fnc_attachSmoke;
 
   }] call Ares_fnc_RegisterCustomModule;
 
@@ -175,7 +175,7 @@ if (
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-    [_objectUnderCursor, "yellow"] call GRAD_lastesel_fnc_attachSmoke;
+    [_objectUnderCursor, "yellow"] call lastesel_fnc_attachSmoke;
 
   }] call Ares_fnc_RegisterCustomModule;
 
