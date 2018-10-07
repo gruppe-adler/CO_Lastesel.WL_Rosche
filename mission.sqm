@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=71;
+		nextID=98;
 	};
 	class Camera
 	{
-		pos[]={15100.924,46.662121,12369.46};
-		dir[]={0.79211515,-0.60476232,-0.082622118};
-		up[]={0.60150152,0.79640192,-0.062739983};
-		aside[]={-0.10374306,1.388471e-007,-0.99460846};
+		pos[]={15092.759,46.556072,12371.056};
+		dir[]={0.40960035,-0.58892906,-0.69670749};
+		up[]={0.29847705,0.80818063,-0.50769275};
+		aside[]={-0.8620612,3.608875e-008,-0.5068137};
 	};
 };
 binarizationWanted=0;
@@ -14429,6 +14429,25 @@ class Mission
 			{
 				class Attribute0
 				{
+					property="ace_repair_editorLoadedWheels";
+					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=4;
+						};
+					};
+				};
+				class Attribute1
+				{
 					property="Redd_Marder_1A5_Bataillon_Attribute";
 					expression="_this setVariable ['Redd_Marder_1A5_Bataillon', _value];";
 					class Value
@@ -14446,45 +14465,7 @@ class Mission
 						};
 					};
 				};
-				class Attribute1
-				{
-					property="Redd_Marder_1A5_Fzg_Nummer_Attribute";
-					expression="_this setVariable ['Redd_Marder_1A5_Fzg_Nummer', _value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
 				class Attribute2
-				{
-					property="Redd_Marder_1A5_Kompanie_Attribute";
-					expression="_this setVariable ['Redd_Marder_1A5_Kompanie', _value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="0";
-						};
-					};
-				};
-				class Attribute3
 				{
 					property="Redd_Marder_1A5_Zug_Buchstaben_Attribute";
 					expression="_this setVariable ['Redd_Marder_1A5_Zug_Buchstabe', _value];";
@@ -14503,10 +14484,29 @@ class Mission
 						};
 					};
 				};
+				class Attribute3
+				{
+					property="Redd_Marder_1A5_Fzg_Nummer_Attribute";
+					expression="_this setVariable ['Redd_Marder_1A5_Fzg_Nummer', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
 				class Attribute4
 				{
-					property="ace_repair_editorLoadedWheels";
-					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+					property="ace_cargo_space";
+					expression="[_this,_value] call ace_cargo_fnc_setSpace;";
 					class Value
 					{
 						class data
@@ -14518,14 +14518,33 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=4;
+							value=12;
 						};
 					};
 				};
 				class Attribute5
 				{
-					property="ace_cargo_space";
-					expression="[_this,_value] call ace_cargo_fnc_setSpace;";
+					property="Redd_Marder_1A5_Kompanie_Attribute";
+					expression="_this setVariable ['Redd_Marder_1A5_Kompanie', _value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ace_repair_editorLoadedTracks";
+					expression="_this setVariable ['ace_repair_editorLoadedTracks',_value];";
 					class Value
 					{
 						class data
@@ -14541,7 +14560,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=6;
+				nAttributes=7;
 			};
 		};
 		class Item121
@@ -17226,6 +17245,7 @@ class Mission
 			colorName="ColorPink";
 			alpha=0.30000001;
 			id=1057;
+			atlOffset=-9.5367432e-006;
 		};
 		class Item211
 		{
@@ -17236,6 +17256,7 @@ class Mission
 			colorName="ColorPink";
 			alpha=0.30000001;
 			id=1058;
+			atlOffset=1.1444092e-005;
 		};
 		class Item212
 		{
@@ -17246,6 +17267,7 @@ class Mission
 			colorName="ColorPink";
 			alpha=0.30000001;
 			id=1059;
+			atlOffset=3.2424927e-005;
 		};
 		class Item213
 		{
@@ -17806,6 +17828,7 @@ class Mission
 			colorName="ColorPink";
 			alpha=0.30000001;
 			id=1115;
+			atlOffset=9.5367432e-007;
 		};
 		class Item269
 		{
