@@ -140,15 +140,46 @@ if (
 
 
 
-  ["LASTESEL", "Outro Music",
+  ["LASTESEL", "Nationalhymne",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
 
-    [5, 1] remoteExec ["fadeMusic"];
-    ["LeadTrack01_F_Curator"] remoteExec ["playMusic"];
+    [player, "hymn"] remoteExec ["say2D", [0,-2] select isDedicated];
 
   }] call Ares_fnc_RegisterCustomModule;
+
+
+
+
+  ["LASTESEL", "attach smoke BLACK",
+  {
+    // Get all the passed parameters
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+    [_objectUnderCursor, "black"] call GRAD_lastesel_fnc_attachSmoke;
+
+  }] call Ares_fnc_RegisterCustomModule;
+
+  ["LASTESEL", "attach smoke RED",
+  {
+    // Get all the passed parameters
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+    [_objectUnderCursor, "red"] call GRAD_lastesel_fnc_attachSmoke;
+
+  }] call Ares_fnc_RegisterCustomModule;
+
+  ["LASTESEL", "attach smoke YELLOW",
+  {
+    // Get all the passed parameters
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+    [_objectUnderCursor, "yellow"] call GRAD_lastesel_fnc_attachSmoke;
+
+  }] call Ares_fnc_RegisterCustomModule;
+
+
 
   
 
