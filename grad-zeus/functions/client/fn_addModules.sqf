@@ -2,6 +2,8 @@
 waitUntil {!isNull player};
 waitUntil {  time > 3 };
 
+if (isNull (getAssignedCuratorLogic player)) exitWith {};
+
 {
 
   
