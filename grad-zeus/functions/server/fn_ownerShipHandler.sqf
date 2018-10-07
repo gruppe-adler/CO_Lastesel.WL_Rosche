@@ -33,9 +33,18 @@ if (!isServer) exitWith {};
 
     	{
     		if ((uniform _x) isEqualTo "") then {
-    			_x setUnitLoadout (_x getVariable ["grad_zeus_loadoutCache", typeOf _x]); // you can also setunitloadout class as a fallback
+                [_x] call grad_loadout_fnc_DoLoadoutForUnit;
+    			// _x setUnitLoadout (_x getVariable ["grad_zeus_loadoutCache", typeOf _x]); // you can also setunitloadout class as a fallback
     		};
     	} forEach units _group;
+
+        if ((side _group) isEqualTo independent) then {
+            {
+               [_x] call grad_zeus_fnc_addFiredEH;
+            } forEach units _group;
+        };
+
+
     }, [_group], 3] call CBA_fnc_waitAndExecute;
    
 }] call CBA_fnc_addEventHandler;

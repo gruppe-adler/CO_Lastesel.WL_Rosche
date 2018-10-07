@@ -11,7 +11,8 @@ class grad_zeus {
 
 	class server {
 		  file = grad-zeus\functions\server;
-              
+           
+      class addFiredEH;   
       class alertUnits;
       class createChairCircle;
       class disableChargeMode;
