@@ -140,7 +140,7 @@ if (
 
 
 
-  ["LASTESEL", "Nationalhymne",
+  ["LASTESEL_SMOKES", "Nationalhymne",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -152,7 +152,7 @@ if (
 
 
 
-  ["LASTESEL", "attach smoke BLACK",
+  ["LASTESEL_SMOKES", "attach smoke BLACK",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -161,7 +161,7 @@ if (
 
   }] call Ares_fnc_RegisterCustomModule;
 
-  ["LASTESEL", "attach smoke RED",
+  ["LASTESEL_SMOKES", "attach smoke RED",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
@@ -170,7 +170,7 @@ if (
 
   }] call Ares_fnc_RegisterCustomModule;
 
-  ["LASTESEL", "attach smoke YELLOW",
+  ["LASTESEL_SMOKES", "attach smoke YELLOW",
   {
     // Get all the passed parameters
     params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
