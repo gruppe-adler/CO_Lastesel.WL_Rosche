@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1043;
+		nextID=1137;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=53;
+		nextID=71;
 	};
 	class Camera
 	{
-		pos[]={15119.989,70.340195,12371.979};
-		dir[]={-0.66501725,-0.37696049,-0.64472103};
-		up[]={-0.2706517,0.92622769,-0.26239124};
-		aside[]={-0.69606984,-2.9336661e-008,0.71798235};
+		pos[]={15100.924,46.662121,12369.46};
+		dir[]={0.79211515,-0.60476232,-0.082622118};
+		up[]={0.60150152,0.79640192,-0.062739983};
+		aside[]={-0.10374306,1.388471e-007,-0.99460846};
 	};
 };
 binarizationWanted=0;
@@ -2806,7 +2806,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=196;
+		items=290;
 		class Item0
 		{
 			dataType="Object";
@@ -2953,7 +2953,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={15124.416,32.743164,12363.129};
+				position[]={15124.416,32.743168,12363.129};
 				angles[]={0,4.9152312,0};
 			};
 			side="Empty";
@@ -2964,7 +2964,6 @@ class Mission
 			};
 			id=15;
 			type="gm_demo_nato_mb_u1300l_cargo";
-			atlOffset=-3.8146973e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -14422,6 +14421,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{[this] call lastesel_fnc_fillWithAmmo;}";
 			};
 			id=921;
 			type="Redd_Marder_1A5_Flecktarn";
@@ -14614,6 +14614,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{[this] call lastesel_fnc_fillWithAmmo;}";
 			};
 			id=924;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
@@ -14672,6 +14673,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{[this] call lastesel_fnc_fillWithAmmo;}";
 			};
 			id=925;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
@@ -17008,6 +17010,7 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				init="call{[this] call lastesel_fnc_fillWithAmmo;}";
 			};
 			id=1041;
 			type="Redd_Tank_LKW_leicht_gl_Wolf_Flecktarn_FueFu";
@@ -17053,6 +17056,966 @@ class Mission
 				};
 				nAttributes=2;
 			};
+		};
+		class Item196
+		{
+			dataType="Marker";
+			position[]={15160.464,30.860001,12465.726};
+			name="zade_start";
+			type="hd_start";
+			colorName="ColorCIV";
+			alpha=0.60000002;
+			id=1043;
+		};
+		class Item197
+		{
+			dataType="Marker";
+			position[]={11203.048,19.845337,9897.5234};
+			name="zade_obj_whiskey";
+			text="WHISKEY";
+			type="hd_objective";
+			colorName="ColorCIV";
+			alpha=0.69999999;
+			id=1044;
+			atlOffset=0.49084473;
+		};
+		class Item198
+		{
+			dataType="Marker";
+			position[]={9168.3145,19.405437,9845.8057};
+			name="zade_obj_xray";
+			text="XRAY";
+			type="hd_objective";
+			colorName="ColorCIV";
+			alpha=0.69999999;
+			id=1045;
+			atlOffset=0.10242271;
+		};
+		class Item199
+		{
+			dataType="Marker";
+			position[]={5601.0942,22.580582,8249.1582};
+			name="zade_obj_yankee";
+			text="YANKEE";
+			type="hd_objective";
+			colorName="ColorCIV";
+			alpha=0.69999999;
+			id=1046;
+			atlOffset=0.28846931;
+		};
+		class Item200
+		{
+			dataType="Marker";
+			position[]={871.53809,15.13,4705.4678};
+			name="zade_end";
+			type="hd_end";
+			colorName="ColorCIV";
+			alpha=0.60000002;
+			id=1047;
+		};
+		class Item201
+		{
+			dataType="Marker";
+			position[]={11296.055,22.987669,10052.236};
+			name="zade_weg_1";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1048;
+		};
+		class Item202
+		{
+			dataType="Marker";
+			position[]={13320.346,28.981001,11494.41};
+			name="zade_rp_1";
+			text="RP1";
+			type="hd_join";
+			colorName="ColorCIV";
+			alpha=0.60000002;
+			id=1049;
+			atlOffset=0.00038909912;
+		};
+		class Item203
+		{
+			dataType="Marker";
+			position[]={12332.826,22.688416,10992.54};
+			name="zade_rp_2";
+			text="RP2";
+			type="hd_join";
+			colorName="ColorCIV";
+			alpha=0.60000002;
+			id=1050;
+		};
+		class Item204
+		{
+			dataType="Marker";
+			position[]={9832.834,30.139999,9570.291};
+			name="zade_rp_3";
+			text="RP3";
+			type="hd_join";
+			colorName="ColorCIV";
+			alpha=0.60000002;
+			id=1051;
+			atlOffset=0.00038909912;
+		};
+		class Item205
+		{
+			dataType="Marker";
+			position[]={8081.3828,21.913,9144.8818};
+			name="zade_rp_4";
+			text="RP4";
+			type="hd_join";
+			colorName="ColorCIV";
+			alpha=0.60000002;
+			id=1052;
+			atlOffset=0.00040626526;
+		};
+		class Item206
+		{
+			dataType="Marker";
+			position[]={6385.0811,19.708,8363.5439};
+			name="zade_rp_5";
+			text="RP5";
+			type="hd_join";
+			colorName="ColorCIV";
+			alpha=0.60000002;
+			id=1053;
+			atlOffset=-0.00020980835;
+		};
+		class Item207
+		{
+			dataType="Marker";
+			position[]={4754.7832,20.336,7036.354};
+			name="zade_rp_6";
+			text="RP6";
+			type="hd_join";
+			colorName="ColorCIV";
+			alpha=0.60000002;
+			id=1054;
+			atlOffset=-0.00026512146;
+		};
+		class Item208
+		{
+			dataType="Marker";
+			position[]={3965.1111,21.155159,5663.1396};
+			name="zade_rp_7";
+			text="RP7";
+			type="hd_join";
+			colorName="ColorCIV";
+			alpha=0.60000002;
+			id=1055;
+		};
+		class Item209
+		{
+			dataType="Marker";
+			position[]={2036.667,5.566,5199.1938};
+			name="zade_rp_8";
+			text="RP8";
+			type="hd_join";
+			colorName="ColorCIV";
+			alpha=0.60000002;
+			id=1056;
+			atlOffset=0.00038528442;
+		};
+		class Item210
+		{
+			dataType="Marker";
+			position[]={11285.35,22.759811,10045.521};
+			name="zade_weg_2";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1057;
+		};
+		class Item211
+		{
+			dataType="Marker";
+			position[]={11276.854,22.600973,10039.396};
+			name="zade_weg_3";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1058;
+		};
+		class Item212
+		{
+			dataType="Marker";
+			position[]={11276.854,22.502516,10028.729};
+			name="zade_weg_4";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1059;
+		};
+		class Item213
+		{
+			dataType="Marker";
+			position[]={11283.865,22.423906,10020.041};
+			name="zade_weg_5";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1060;
+		};
+		class Item214
+		{
+			dataType="Marker";
+			position[]={11291.768,22.119772,10010.163};
+			name="zade_weg_6";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1061;
+		};
+		class Item215
+		{
+			dataType="Marker";
+			position[]={11233.402,18.810503,9890.2686};
+			name="zade_weg_7";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1062;
+		};
+		class Item216
+		{
+			dataType="Marker";
+			position[]={11228.454,18.459768,9882.127};
+			name="zade_weg_8";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1063;
+		};
+		class Item217
+		{
+			dataType="Marker";
+			position[]={11224.783,18.209335,9874.9443};
+			name="zade_weg_9";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1064;
+		};
+		class Item218
+		{
+			dataType="Marker";
+			position[]={11214.346,18.228285,9869.1826};
+			name="zade_weg_10";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1065;
+		};
+		class Item219
+		{
+			dataType="Marker";
+			position[]={11205.456,18.268913,9873.332};
+			name="zade_weg_11";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1066;
+		};
+		class Item220
+		{
+			dataType="Marker";
+			position[]={11197.26,18.320967,9877.0859};
+			name="zade_weg_12";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1067;
+		};
+		class Item221
+		{
+			dataType="Marker";
+			position[]={11142.18,18.966557,9924.0449};
+			name="zade_weg_13";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1068;
+		};
+		class Item222
+		{
+			dataType="Marker";
+			position[]={11138.626,19.117559,9929.376};
+			name="zade_weg_14";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1069;
+		};
+		class Item223
+		{
+			dataType="Marker";
+			position[]={11135.168,19.136227,9934.3154};
+			name="zade_weg_15";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1070;
+		};
+		class Item224
+		{
+			dataType="Marker";
+			position[]={11126.676,19.043196,9935.3027};
+			name="zade_weg_16";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1071;
+		};
+		class Item225
+		{
+			dataType="Marker";
+			position[]={11120.454,18.923622,9930.3643};
+			name="zade_weg_17";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1072;
+		};
+		class Item226
+		{
+			dataType="Marker";
+			position[]={11115.121,18.83713,9926.5117};
+			name="zade_weg_18";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1073;
+		};
+		class Item227
+		{
+			dataType="Marker";
+			position[]={9593.5156,29.971132,9597.3018};
+			name="zade_weg_19";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1074;
+		};
+		class Item228
+		{
+			dataType="Marker";
+			position[]={9580.123,29.947119,9596.4873};
+			name="zade_weg_20";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1075;
+		};
+		class Item229
+		{
+			dataType="Marker";
+			position[]={9568.1523,29.930666,9595.4746};
+			name="zade_weg_21";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1076;
+		};
+		class Item230
+		{
+			dataType="Marker";
+			position[]={9553.1367,29.880245,9600.75};
+			name="zade_weg_22";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1077;
+		};
+		class Item231
+		{
+			dataType="Marker";
+			position[]={9537.5146,29.989529,9608.0547};
+			name="zade_weg_23";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1078;
+		};
+		class Item232
+		{
+			dataType="Marker";
+			position[]={9525.3408,29.56665,9612.9229};
+			name="zade_weg_24";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1079;
+		};
+		class Item233
+		{
+			dataType="Marker";
+			position[]={8894.9316,18.816196,9688.1191};
+			name="zade_weg_25";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1080;
+		};
+		class Item234
+		{
+			dataType="Marker";
+			position[]={8891.752,19.012903,9676.875};
+			name="zade_weg_26";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1081;
+		};
+		class Item235
+		{
+			dataType="Marker";
+			position[]={8889.8652,19.234411,9665.1738};
+			name="zade_weg_27";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1082;
+		};
+		class Item236
+		{
+			dataType="Marker";
+			position[]={8882.7861,19.41283,9657.3906};
+			name="zade_weg_28";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1083;
+		};
+		class Item237
+		{
+			dataType="Marker";
+			position[]={8874.8604,19.6134,9648.4717};
+			name="zade_weg_29";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1084;
+		};
+		class Item238
+		{
+			dataType="Marker";
+			position[]={8868.2061,19.800871,9639.4121};
+			name="zade_weg_30";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1085;
+		};
+		class Item239
+		{
+			dataType="Marker";
+			position[]={8695.2979,19.156397,9406.79};
+			name="zade_weg_31";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1086;
+		};
+		class Item240
+		{
+			dataType="Marker";
+			position[]={8691.8389,19.286798,9396.6621};
+			name="zade_weg_32";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1087;
+		};
+		class Item241
+		{
+			dataType="Marker";
+			position[]={8688.584,19.448019,9385.4619};
+			name="zade_weg_33";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1088;
+		};
+		class Item242
+		{
+			dataType="Marker";
+			position[]={8684.3799,19.265079,9373.9014};
+			name="zade_weg_34";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1089;
+		};
+		class Item243
+		{
+			dataType="Marker";
+			position[]={8672.4658,19.18446,9367.2451};
+			name="zade_weg_35";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1090;
+		};
+		class Item244
+		{
+			dataType="Marker";
+			position[]={8662.1299,19.210213,9362.0762};
+			name="zade_weg_36";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1091;
+		};
+		class Item245
+		{
+			dataType="Marker";
+			position[]={5853.5737,18.903349,8001.0562};
+			name="zade_weg_37";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1092;
+		};
+		class Item246
+		{
+			dataType="Marker";
+			position[]={5844.2832,19.086782,7997.0376};
+			name="zade_weg_38";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1093;
+		};
+		class Item247
+		{
+			dataType="Marker";
+			position[]={5832.9839,19.324072,7992.7705};
+			name="zade_weg_39";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1094;
+		};
+		class Item248
+		{
+			dataType="Marker";
+			position[]={5821.9346,19.446329,7996.6621};
+			name="zade_weg_40";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1095;
+		};
+		class Item249
+		{
+			dataType="Marker";
+			position[]={5816.6621,19.265259,8004.8228};
+			name="zade_weg_41";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1096;
+		};
+		class Item250
+		{
+			dataType="Marker";
+			position[]={5812.3931,18.958288,8012.7319};
+			name="zade_weg_42";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1097;
+		};
+		class Item251
+		{
+			dataType="Marker";
+			position[]={5659.1577,21.086298,8240.0947};
+			name="zade_weg_43";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1098;
+		};
+		class Item252
+		{
+			dataType="Marker";
+			position[]={5649.1016,21.341652,8237.8604};
+			name="zade_weg_44";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1099;
+		};
+		class Item253
+		{
+			dataType="Marker";
+			position[]={5639.8452,21.506741,8236.584};
+			name="zade_weg_45";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1100;
+		};
+		class Item254
+		{
+			dataType="Marker";
+			position[]={5635.376,21.5411,8231.1563};
+			name="zade_weg_46";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1101;
+		};
+		class Item255
+		{
+			dataType="Marker";
+			position[]={5636.0142,21.521503,8223.1748};
+			name="zade_weg_47";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1102;
+		};
+		class Item256
+		{
+			dataType="Marker";
+			position[]={5636.4932,21.484781,8215.1953};
+			name="zade_weg_48";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1103;
+		};
+		class Item257
+		{
+			dataType="Marker";
+			position[]={5647.7383,21.105095,8039.8003};
+			name="zade_weg_49";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1104;
+		};
+		class Item258
+		{
+			dataType="Marker";
+			position[]={5649.0869,21.121105,8028.3672};
+			name="zade_weg_50";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1105;
+		};
+		class Item259
+		{
+			dataType="Marker";
+			position[]={5649.0503,21.143328,8019.0049};
+			name="zade_weg_51";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1106;
+		};
+		class Item260
+		{
+			dataType="Marker";
+			position[]={5552.311,22.036875,7895.5503};
+			name="zade_weg_52";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1107;
+		};
+		class Item261
+		{
+			dataType="Marker";
+			position[]={5550.6875,22.500502,7883.9854};
+			name="zade_weg_53";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1108;
+		};
+		class Item262
+		{
+			dataType="Marker";
+			position[]={5553.3247,22.606758,7874.8535};
+			name="zade_weg_54";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1109;
+		};
+		class Item263
+		{
+			dataType="Marker";
+			position[]={5548.8613,22.668715,7867.9561};
+			name="zade_weg_55";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1110;
+		};
+		class Item264
+		{
+			dataType="Marker";
+			position[]={5537.7017,22.649736,7862.8828};
+			name="zade_weg_56";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1111;
+		};
+		class Item265
+		{
+			dataType="Marker";
+			position[]={5528.5713,22.563486,7858.4189};
+			name="zade_weg_57";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1112;
+		};
+		class Item266
+		{
+			dataType="Marker";
+			position[]={3733.8896,15.434008,6352.9175};
+			name="zade_weg_58";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1113;
+		};
+		class Item267
+		{
+			dataType="Marker";
+			position[]={3722.2222,15.501575,6345.8262};
+			name="zade_weg_59";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1114;
+		};
+		class Item268
+		{
+			dataType="Marker";
+			position[]={3712.6138,15.575315,6339.6489};
+			name="zade_weg_60";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1115;
+		};
+		class Item269
+		{
+			dataType="Marker";
+			position[]={3713.0718,15.65561,6326.6084};
+			name="zade_weg_61";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1116;
+		};
+		class Item270
+		{
+			dataType="Marker";
+			position[]={3718.1047,15.967733,6312.1987};
+			name="zade_weg_62";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1117;
+		};
+		class Item271
+		{
+			dataType="Marker";
+			position[]={3724.2815,16.366674,6297.0977};
+			name="zade_weg_63";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1118;
+		};
+		class Item272
+		{
+			dataType="Marker";
+			position[]={3954.2542,21.242088,5694.1426};
+			name="zade_weg_64";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1119;
+		};
+		class Item273
+		{
+			dataType="Marker";
+			position[]={3958.6423,21.151495,5682.3936};
+			name="zade_weg_65";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1120;
+		};
+		class Item274
+		{
+			dataType="Marker";
+			position[]={3963.3137,21.146372,5671.0684};
+			name="zade_weg_66";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1121;
+		};
+		class Item275
+		{
+			dataType="Marker";
+			position[]={3959.7749,21.100281,5663.4248};
+			name="zade_weg_67";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1122;
+		};
+		class Item276
+		{
+			dataType="Marker";
+			position[]={3942.9292,20.983721,5661.7256};
+			name="zade_weg_68";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1123;
+		};
+		class Item277
+		{
+			dataType="Marker";
+			position[]={3929.198,20.903828,5660.3101};
+			name="zade_weg_69";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1124;
+		};
+		class Item278
+		{
+			dataType="Marker";
+			position[]={2504.8491,9.0395346,5358.1045};
+			name="zade_weg_70";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1125;
+		};
+		class Item279
+		{
+			dataType="Marker";
+			position[]={2493.9258,8.4897089,5367.0181};
+			name="zade_weg_71";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1126;
+		};
+		class Item280
+		{
+			dataType="Marker";
+			position[]={2484.8862,7.81038,5377.6904};
+			name="zade_weg_72";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1127;
+		};
+		class Item281
+		{
+			dataType="Marker";
+			position[]={2472.0796,7.8019586,5380.3281};
+			name="zade_weg_73";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1128;
+		};
+		class Item282
+		{
+			dataType="Marker";
+			position[]={2456.5112,7.6408515,5372.418};
+			name="zade_weg_74";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1129;
+		};
+		class Item283
+		{
+			dataType="Marker";
+			position[]={2444.7095,7.3180957,5368.0244};
+			name="zade_weg_75";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1130;
+		};
+		class Item284
+		{
+			dataType="Marker";
+			position[]={1281.1406,15.495604,4371.2441};
+			name="zade_weg_76";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1131;
+		};
+		class Item285
+		{
+			dataType="Marker";
+			position[]={1275.0171,15.840857,4365.022};
+			name="zade_weg_77";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1132;
+		};
+		class Item286
+		{
+			dataType="Marker";
+			position[]={1268.9927,16.150953,4359.0957};
+			name="zade_weg_78";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1133;
+		};
+		class Item287
+		{
+			dataType="Marker";
+			position[]={1260.4995,16.34568,4356.3311};
+			name="zade_weg_79";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1134;
+		};
+		class Item288
+		{
+			dataType="Marker";
+			position[]={1249.6353,16.090797,4366.0088};
+			name="zade_weg_80";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1135;
+		};
+		class Item289
+		{
+			dataType="Marker";
+			position[]={1239.6606,15.816922,4375.9834};
+			name="zade_weg_81";
+			type="mil_dot";
+			colorName="ColorPink";
+			alpha=0.30000001;
+			id=1136;
 		};
 	};
 	class Connections
