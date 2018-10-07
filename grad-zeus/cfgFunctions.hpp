@@ -4,6 +4,8 @@ class grad_zeus {
 		  file = grad-zeus\functions\client;
 
       class addModules;
+      class applyFace;
+      class selectFace;
       class stopMusic;
   };
 

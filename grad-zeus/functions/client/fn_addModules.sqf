@@ -20,9 +20,10 @@ waitUntil {  time > 3 };
             _x setSkill ["commanding", 1];
             _x setSkill ["general", 1];
 
-            [_x] call grad_zeus_fnc_addApacheDestruction;
+            [_x] call grad_zeus_fnc_selectFace;
 
         } forEach units _group;
+
     }];
 
     _x addEventHandler ["CuratorObjectPlaced", {
@@ -44,7 +45,6 @@ waitUntil {  time > 3 };
         if (_object isKindOf "CAManBase") then {
             if (count units _object == 1) then {
                 ["grad_zeus_setServerAsOwner", [group _object]] call CBA_fnc_serverEvent;
-                [_object] call grad_zeus_fnc_addApacheDestruction;
             };
         } else {
             if (count crew _object > 1) then {
