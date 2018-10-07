@@ -45,8 +45,6 @@ class wutBuerger: RuFlora {
 
         addItemsToUniform[] = {
 
-                LIST_1("rhs_mag_fakels"),
-                LIST_1("rhs_mag_fakel"),
                 LIST_1("rhs_mag_nspn_red"),
                 LIST_1("rhs_mag_m18_red"),
                 LIST_1("rhs_mag_m18_purple"),
