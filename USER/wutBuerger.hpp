@@ -50,6 +50,32 @@ class reichsBuerger: RuFlora {
         class Soldier_F {
         };
 
+        
+
+        // todo fill in izlom stuff
+
+        //Team Leader
+        class Survivor_F: Soldier_F {
+            uniform = "rds_uniform_Worker2";
+            vest = "";
+            backpack = "";
+            headgear = "rds_Villager_cap2";
+
+            addItemsToUniform[] = {
+
+                LIST_1("rhs_mag_fakels"),
+                LIST_1("rhs_mag_fakel"),
+                LIST_1("rhs_mag_nspn_red"),
+                LIST_1("rhs_mag_m18_red"),
+                LIST_1("rhs_mag_m18_purple"),
+                LIST_2("rhs_mag_an_m14_th3")
+            };
+
+            addItemsToVest[] = {
+                LIST_2("rhs_mag_an_m14_th3")
+            };
+        };
+
         //Asst. Autorifleman
         class soldier_AAR_F: Soldier_F {
 

@@ -21,6 +21,12 @@ if (!isServer) exitWith {};
     _group setGroupOwner 2;
 
 
+    // enable Dyn Sim if allowed
+    if (missionNamespace getVariable ["GRAD_zeus_dynSimEnabled", false]) then {
+        _group enableDynamicSimulation true;
+    };
+
+
     // reapply loadout if necessary
    	[{
    		params ["_group"];

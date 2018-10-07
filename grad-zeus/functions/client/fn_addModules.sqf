@@ -22,6 +22,7 @@ waitUntil {  time > 3 };
 
             [_x] call grad_zeus_fnc_selectFace;
 
+
         } forEach units _group;
 
     }];
@@ -39,7 +40,6 @@ waitUntil {  time > 3 };
         _object setSkill ["reloadSpeed", 1]; 
         _object setSkill ["commanding", 1];
         _object setSkill ["general", 1];
-
 
 
         if (_object isKindOf "CAManBase") then {
@@ -111,6 +111,32 @@ if (
   }] call Ares_fnc_RegisterCustomModule;
 
 
+  ["LASTESEL", "Toggle DynSim for new units",
+  {
+    // Get all the passed parameters
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+    private _current = missionNamespace getVariable ["grad_zeus_dynSimEnabled", false];
+    missionNamespace setVariable ["grad_zeus_dynSimEnabled", !_current, true];
+
+    hint format ["DYN SIM FOR NEW UNITS: %1", !_current];
+
+  }] call Ares_fnc_RegisterCustomModule;
+
+
+  ["LASTESEL", "Toggle DynSim for this unit",
+  {
+    // Get all the passed parameters
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+    if (isNull _objectUnderCursor) exitWith { hint "no unit selected"; };
+
+    private _current = dynamicSimulationEnabled _objectUnderCursor;
+    _objectUnderCursor enableDynamicSimulation !_current;
+
+    hint format ["DYN SIM FOR %1: %2", _objectUnderCursor, !_current];
+
+  }] call Ares_fnc_RegisterCustomModule;
 
 
 
@@ -140,6 +166,24 @@ if (
 
   }] call Ares_fnc_RegisterCustomModule;
 
+
+
+  ["LASTESEL", "Play revolt animation",
+  {
+    // Get all the passed parameters
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+    if (isNull _objectUnderCursor) exitWith { hint "no unit selected"; };
+
+    _objectUnderCursor playAction selectRandom [
+        "ace_Gestures_point",
+        "ace_Gestures_regroup",
+        "ace_Gestures_hold",
+        "ace_Gestures_engage",
+        "ace_Gestures_warning"
+    ];
+
+  }] call Ares_fnc_RegisterCustomModule;
   
 
 };
