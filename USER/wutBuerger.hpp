@@ -44,10 +44,11 @@ class wutBuerger: RuFlora {
         headgear = "rds_Villager_cap2";
 
         addItemsToUniform[] = {
-                LIST_4("HandGrenade")
+                LIST_4("rhs_mag_an_m14_th3")
             };
         addItemsToVest[] = {
-                LIST_2("HandGrenade")
+                LIST_1("SmokeShell"),
+                LIST_1("SmokeShellRed")
             };
         
     };

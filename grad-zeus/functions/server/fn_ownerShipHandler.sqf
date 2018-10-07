@@ -36,13 +36,23 @@ if (!isServer) exitWith {};
                 [_x] call grad_loadout_fnc_DoLoadoutForUnit;
     			// _x setUnitLoadout (_x getVariable ["grad_zeus_loadoutCache", typeOf _x]); // you can also setunitloadout class as a fallback
     		};
+
+            _x setskill ["courage",1];
+            _x setCombatMode "RED";
+            _x ForceSpeed 10;
+            _x allowFleeing 0;
+            _x disableAI "COVER";
+            _x SetUnitPos "UP";
+            _x enableFatigue false;
     	} forEach units _group;
 
+        /*
         if ((side _group) isEqualTo independent) then {
             {
                [_x] call grad_zeus_fnc_addFiredEH;
             } forEach units _group;
         };
+        */
 
 
     }, [_group], 3] call CBA_fnc_waitAndExecute;
