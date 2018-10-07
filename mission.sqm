@@ -14034,7 +14034,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="Sanitäter@Mama";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=891;
@@ -14113,7 +14113,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
-						description="Sanitäter@Mama";
+						description="Sanitäter";
 						isPlayable=1;
 					};
 					id=893;
