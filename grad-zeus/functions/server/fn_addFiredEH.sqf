@@ -14,9 +14,9 @@ if (!(local _unit)) exitWith { hint "group not yet local to server."; };
     _x enableFatigue false;
 
     removeAllWeapons _x;
-    _x addMagazineCargoGlobal ["HandGrenade"];
+    _x addMagazineCargoGlobal ["HandGrenade", 1];
 
-    private _callback = format ["%1 received molotov cocktail", _caller];
+    private _callback = format ["%1 received molotov cocktail", _x];
     [_callback] remoteExec ["systemChat", _caller];
 
     // check if unit is local, as fired has to be
