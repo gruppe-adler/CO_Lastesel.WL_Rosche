@@ -10,7 +10,7 @@ _unit disableAI "COVER";
 _unit SetUnitPos "UP";
 _unit enableFatigue false;
 
-_unit addMagazineCargoGlobal "HandGrenade";
+_unit addMagazineCargoGlobal ["HandGrenade",1];
 
 private _callback = format ["%1 received molotov cocktail", _caller];
 [_callback] remoteExec ["systemChat", _caller];

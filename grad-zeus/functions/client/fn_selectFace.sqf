@@ -32,13 +32,18 @@ private _face = selectRandom [
 		"kerry_B2_F"
 ];
 
-[_unit, _face] remoteExec ["grad_zeus_fnc_applyFace", 0, true];
+[_unit, _face] remoteExec ["grad_zeus_fnc_applyFace", [0,-2] select isDedicated, true];
+
+_unit setVariable ["lastesel_sideCache", side _unit];
 
 _unit addEventHandler ["Killed", {
 	params ["_unit", "_killer", "_instigator", "_useEffects"];
 
-	if ((side _unit) isEqualTo civilian) then {
+	private _side = _unit getVariable ["lastesel_sideCache", civilian];
+
+	if (_side == civilian) then {
 		private _count = missionNamespace getVariable ["lastesel_count_civkills", 0];
+		_count = _count + 1;
 		missionNamespace setVariable ["lastesel_count_civkills", _count, true];
 		diag_log format ["lastesel_count_civkills %1", _count];
 		private _string = format ["civilians dead: %1", _count];
@@ -47,8 +52,9 @@ _unit addEventHandler ["Killed", {
 		} forEach allCurators;
 	};
 
-	if ((side _unit) isEqualTo independent) then {
+	if (_side == independent) then {
 		private _count = missionNamespace getVariable ["lastesel_count_indkills", 0];
+		_count = _count + 1;
 		missionNamespace setVariable ["lastesel_count_indkills", _count, true];
 		diag_log format ["lastesel_count_indkills %1", _count];
 		private _string = format ["protestors dead: %1", _count];

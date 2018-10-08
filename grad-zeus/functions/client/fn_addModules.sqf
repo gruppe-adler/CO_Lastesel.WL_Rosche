@@ -22,7 +22,7 @@ if (isNull (getAssignedCuratorLogic player)) exitWith {};
             _x setSkill ["commanding", 1];
             _x setSkill ["general", 1];
 
-            [_x] call grad_zeus_fnc_selectFace;
+            [_x] remoteExec ["grad_zeus_fnc_selectFace", 2];
 
 
         } forEach units _group;
@@ -46,13 +46,13 @@ if (isNull (getAssignedCuratorLogic player)) exitWith {};
 
         if (_object isKindOf "CAManBase") then {
             if (count units _object == 1) then {
-                [_object] call grad_zeus_fnc_selectFace;
+                [_object] remoteExec ["grad_zeus_fnc_selectFace", 2];
                 ["grad_zeus_setServerAsOwner", [group _object]] call CBA_fnc_serverEvent;
             };
         } else {
             if (count crew _object > 1) then {
                 {
-                    [_x] call grad_zeus_fnc_selectFace;
+                    [_x] remoteExec ["grad_zeus_fnc_selectFace", 2];
                 } forEach crew _object;
                 ["grad_zeus_setServerAsOwner", [group (crew _object select 0)]] call CBA_fnc_serverEvent;
             };
