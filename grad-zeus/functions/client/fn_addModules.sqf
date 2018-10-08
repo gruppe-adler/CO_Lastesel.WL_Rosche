@@ -31,29 +31,14 @@ if (isNull (getAssignedCuratorLogic player)) exitWith {};
 
     _x addEventHandler ["CuratorObjectPlaced", {
         params ["", "_object"];
-        
-
-        _object setSkill ["aimingShake", 0.2]; 
-        _object setSkill ["aimingSpeed", 0.9]; 
-        _object setSkill ["endurance", 0.6]; 
-        _object setSkill ["spotDistance", 1]; 
-        _object setSkill ["spotTime", 0.9]; 
-        _object setSkill ["courage", 1]; 
-        _object setSkill ["reloadSpeed", 1]; 
-        _object setSkill ["commanding", 1];
-        _object setSkill ["general", 1];
 
 
         if (_object isKindOf "CAManBase") then {
             if (count units _object == 1) then {
-                [_object] remoteExec ["grad_zeus_fnc_selectFace", 2];
                 ["grad_zeus_setServerAsOwner", [group _object]] call CBA_fnc_serverEvent;
             };
         } else {
             if (count crew _object > 1) then {
-                {
-                    [_x] remoteExec ["grad_zeus_fnc_selectFace", 2];
-                } forEach crew _object;
                 ["grad_zeus_setServerAsOwner", [group (crew _object select 0)]] call CBA_fnc_serverEvent;
             };
         };
