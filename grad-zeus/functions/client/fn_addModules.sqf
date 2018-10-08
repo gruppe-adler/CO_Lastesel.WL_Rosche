@@ -46,10 +46,14 @@ if (isNull (getAssignedCuratorLogic player)) exitWith {};
 
         if (_object isKindOf "CAManBase") then {
             if (count units _object == 1) then {
+                [_object] call grad_zeus_fnc_selectFace;
                 ["grad_zeus_setServerAsOwner", [group _object]] call CBA_fnc_serverEvent;
             };
         } else {
             if (count crew _object > 1) then {
+                {
+                    [_x] call grad_zeus_fnc_selectFace;
+                } forEach crew _object;
                 ["grad_zeus_setServerAsOwner", [group (crew _object select 0)]] call CBA_fnc_serverEvent;
             };
         };
