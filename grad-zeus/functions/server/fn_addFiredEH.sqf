@@ -1,6 +1,6 @@
 params ["_unit", "_caller"];
 
-if (!(local _unit)) exitWith {};
+if (!(local _unit)) exitWith { hint "unit not yet local to server."; };
 
 _unit setskill ["courage",1];
 _unit setCombatMode "RED";
@@ -10,7 +10,8 @@ _unit disableAI "COVER";
 _unit SetUnitPos "UP";
 _unit enableFatigue false;
 
-_unit addMagazineCargoGlobal ["HandGrenade",1];
+removeAllWeapons _unit;
+_unit addMagazineCargoGlobal ["HandGrenade"];
 
 private _callback = format ["%1 received molotov cocktail", _caller];
 [_callback] remoteExec ["systemChat", _caller];
