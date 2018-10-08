@@ -213,14 +213,22 @@ if (
     if (isNull _objectUnderCursor) exitWith { hint "no unit selected"; };
 
     _objectUnderCursor playAction selectRandom [
-        "ace_Gestures_point",
-        "ace_Gestures_regroup",
-        "ace_Gestures_hold",
         "ace_Gestures_engage",
         "ace_Gestures_warning"
     ];
 
   }] call Ares_fnc_RegisterCustomModule;
   
+
+  ["LASTESEL", "Add Molotov Cocktail",
+  {
+    // Get all the passed parameters
+    params [["_position", [0,0,0], [[]], 3], ["_objectUnderCursor", objNull, [objNull]]];
+
+    if (isNull _objectUnderCursor) exitWith { hint "no unit selected"; };
+
+    [_objectUnderCursor, player] remoteExec ["grad_zeus_fnc_addFiredEH", 2];
+
+  }] call Ares_fnc_RegisterCustomModule;
 
 };

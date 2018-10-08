@@ -1,4 +1,6 @@
-params ["_unit"];
+params ["_unit", "_caller"];
+
+if (!(local _unit)) exitWith {};
 
 _unit setskill ["courage",1];
 _unit setCombatMode "RED";
@@ -7,6 +9,16 @@ _unit allowFleeing 0;
 _unit disableAI "COVER";
 _unit SetUnitPos "UP";
 _unit enableFatigue false;
+
+_unit addMagazineCargoGlobal "HandGrenade";
+
+private _callback = format ["%1 received molotov cocktail", _caller];
+[_callback] remoteExec ["systemChat", _caller];
+
+// check if unit is local, as fired has to be
+if (_unit getVariable ["lastesel_firedAdded", false]) exitWith {};
+
+_unit setVariable ["lastesel_firedAdded", true];
 
 
 _unit addEventHandler ["Fired",
