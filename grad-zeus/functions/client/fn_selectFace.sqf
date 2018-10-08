@@ -41,9 +41,9 @@ _unit addEventHandler ["Killed", {
 		private _count = missionNamespace getVariable ["lastesel_count_civkills", 0];
 		missionNamespace setVariable ["lastesel_count_civkills", _count, true];
 		diag_log format ["lastesel_count_civkills %1", _count];
-
+		private _string = format ["civilians dead: %1", _count];
 		{
-		  // code...
+		    [_string] remoteExec ["systemChat", getAssignedCuratorUnit _x];
 		} forEach allCurators;
 	};
 
@@ -51,6 +51,10 @@ _unit addEventHandler ["Killed", {
 		private _count = missionNamespace getVariable ["lastesel_count_indkills", 0];
 		missionNamespace setVariable ["lastesel_count_indkills", _count, true];
 		diag_log format ["lastesel_count_indkills %1", _count];
+		private _string = format ["protestors dead: %1", _count];
+		{
+		    [_string] remoteExec ["systemChat", getAssignedCuratorUnit _x];
+		} forEach allCurators;
 	};
 
 }];
